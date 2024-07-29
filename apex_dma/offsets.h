@@ -14,5 +14,5 @@
 #define OFFSET_HIGHLIGHTSIZE  0x34
 // Mode: HighlightSettings + 0x34 * Context + 0x0
 // Color: HighlightSettings + 0x34 * Context + 0x4
-#define OFFSET_GRADE  0x0348   //m_grade
+#define OFFSET_GRADE  0x0348   //m_grade   7/29/2024
 #define m_lastChargeLevel 0x16f0 // m_lastChargeLevel  7/29/2024
