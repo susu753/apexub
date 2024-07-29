@@ -35,9 +35,9 @@ jobs:
 
     - name: Install Rust  
       run: |  
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y  
-        echo "$HOME/.cargo/bin" >> $GITHUB_PATH  
-         shell: bash
+            curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y  
+            echo "$HOME/.cargo/bin" >> $GITHUB_PATH  
+            shell: bash
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
