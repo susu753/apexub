@@ -69,4 +69,4 @@ jobs:
           build/apex_dma
           build/libmemflow_native.so
           README.md
-        retention-days: 5
+        retention-days: 4
