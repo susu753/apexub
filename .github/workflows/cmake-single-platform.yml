@@ -28,17 +28,16 @@ jobs:
       with:
         submodules: recursive
 
-# 添加安装 Rust 的步骤  
-    - name: Install Rust  
-      run: |  
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y  
-        echo "$HOME/.cargo/bin" >> $GITHUB_PATH  
-       shell: bash
-
     - name: Install dependencies
       run: |
         sudo apt update
         sudo apt install protobuf-compiler libzstd-dev libglfw3-dev libfreetype6-dev libvulkan-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libxext-dev wayland-protocols libwayland-dev libxkbcommon-dev
+
+    - name: Install Rust  
+      run: |  
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y  
+        echo "$HOME/.cargo/bin" >> $GITHUB_PATH  
+         shell: bash
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
